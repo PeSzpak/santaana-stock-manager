@@ -71,6 +71,14 @@ python3 -m http.server 8000
 └── docs/media/         # imagens deste README
 ```
 
+## Limitações conhecidas
+
+- O código do produto não é validado como único: dá para cadastrar dois `M001` na mesma categoria.
+- A tabela é montada com `innerHTML` sem escapar o texto digitado, então um nome com HTML (`<b>x</b>`) é renderizado como HTML.
+- A busca sem resultado mostra a mesma mensagem da lista vazia ("Clique em Adicionar Produto para começar").
+- Os quatro scripts de `js/` são cópias; uma correção precisa ser feita nos quatro.
+- "91 anos" está escrito fixo em `pages/historia.html`.
+
 ## Paleta
 
 Terracota `#C1694F` e `#B85E47`, fundo `#f5f5f5`, texto `#333333`.
